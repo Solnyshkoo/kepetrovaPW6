@@ -7,13 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB7AD168FB19A381FF5F931 /* Pods_kepetrovaPW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387D474B1A00020D16B14ED /* Pods_kepetrovaPW6.framework */; };
 		5E12E795274971430006439C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12E794274971430006439C /* AppDelegate.swift */; };
 		5E12E797274971430006439C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12E796274971430006439C /* SceneDelegate.swift */; };
 		5E12E799274971430006439C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12E798274971430006439C /* ViewController.swift */; };
 		5E12E79C274971430006439C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E12E79A274971430006439C /* Main.storyboard */; };
 		5E12E79E274971460006439C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E12E79D274971460006439C /* Assets.xcassets */; };
 		5E12E7A1274971460006439C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E12E79F274971460006439C /* LaunchScreen.storyboard */; };
+		5E12E7C7274980250006439C /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E12E7C527497FF80006439C /* Framework.framework */; };
+		5E12E7C8274980250006439C /* Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E12E7C527497FF80006439C /* Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E12E7CD274982B80006439C /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12E7CC274982B80006439C /* MyLogger2 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E12E7C427497FF80006439C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E12E7C027497FF80006439C /* Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5E12E7B227497EDE0006439C;
+			remoteInfo = Framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E12E7C9274980250006439C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E12E7C8274980250006439C /* Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E12E791274971430006439C /* kepetrovaPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kepetrovaPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +52,11 @@
 		5E12E79D274971460006439C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E12E7A0274971460006439C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E12E7A2274971460006439C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E12E7C027497FF80006439C /* Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Framework.xcodeproj; path = ../Framework/Framework.xcodeproj; sourceTree = "<group>"; };
+		5E12E7CB274982A10006439C /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../MyLogger2; sourceTree = "<group>"; };
+		84A0216B8A877117D76D874B /* Pods-kepetrovaPW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kepetrovaPW6.debug.xcconfig"; path = "Target Support Files/Pods-kepetrovaPW6/Pods-kepetrovaPW6.debug.xcconfig"; sourceTree = "<group>"; };
+		99CF1934DAA2F812E16D564A /* Pods-kepetrovaPW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kepetrovaPW6.release.xcconfig"; path = "Target Support Files/Pods-kepetrovaPW6/Pods-kepetrovaPW6.release.xcconfig"; sourceTree = "<group>"; };
+		D387D474B1A00020D16B14ED /* Pods_kepetrovaPW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kepetrovaPW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +64,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E12E7C7274980250006439C /* Framework.framework in Frameworks */,
+				5E12E7CD274982B80006439C /* MyLogger2 in Frameworks */,
+				1BB7AD168FB19A381FF5F931 /* Pods_kepetrovaPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D2D5EA0E8DE7AA93ADCC82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84A0216B8A877117D76D874B /* Pods-kepetrovaPW6.debug.xcconfig */,
+				99CF1934DAA2F812E16D564A /* Pods-kepetrovaPW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5E12E788274971420006439C = {
 			isa = PBXGroup;
 			children = (
+				5E12E7CA274982A10006439C /* Packages */,
+				5E12E7C027497FF80006439C /* Framework.xcodeproj */,
 				5E12E793274971430006439C /* kepetrovaPW6 */,
 				5E12E792274971430006439C /* Products */,
+				5E12E7C6274980250006439C /* Frameworks */,
+				01D2D5EA0E8DE7AA93ADCC82 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +117,30 @@
 			path = kepetrovaPW6;
 			sourceTree = "<group>";
 		};
+		5E12E7C127497FF80006439C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E12E7C527497FF80006439C /* Framework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E12E7C6274980250006439C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D387D474B1A00020D16B14ED /* Pods_kepetrovaPW6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E12E7CA274982A10006439C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5E12E7CB274982A10006439C /* MyLogger2 */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +148,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E12E7A5274971460006439C /* Build configuration list for PBXNativeTarget "kepetrovaPW6" */;
 			buildPhases = (
+				D9663868402E1D42E959A129 /* [CP] Check Pods Manifest.lock */,
 				5E12E78D274971420006439C /* Sources */,
 				5E12E78E274971420006439C /* Frameworks */,
 				5E12E78F274971420006439C /* Resources */,
+				5E12E7C9274980250006439C /* Embed Frameworks */,
+				819B16998222673A247949C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = kepetrovaPW6;
+			packageProductDependencies = (
+				5E12E7CC274982B80006439C /* MyLogger2 */,
+			);
 			productName = kepetrovaPW6;
 			productReference = 5E12E791274971430006439C /* kepetrovaPW6.app */;
 			productType = "com.apple.product-type.application";
@@ -113,12 +193,28 @@
 			mainGroup = 5E12E788274971420006439C;
 			productRefGroup = 5E12E792274971430006439C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5E12E7C127497FF80006439C /* Products */;
+					ProjectRef = 5E12E7C027497FF80006439C /* Framework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5E12E790274971420006439C /* kepetrovaPW6 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5E12E7C527497FF80006439C /* Framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Framework.framework;
+			remoteRef = 5E12E7C427497FF80006439C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5E12E78F274971420006439C /* Resources */ = {
@@ -132,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		819B16998222673A247949C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kepetrovaPW6/Pods-kepetrovaPW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kepetrovaPW6/Pods-kepetrovaPW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kepetrovaPW6/Pods-kepetrovaPW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9663868402E1D42E959A129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kepetrovaPW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E12E78D274971420006439C /* Sources */ = {
@@ -284,6 +422,7 @@
 		};
 		5E12E7A6274971460006439C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A0216B8A877117D76D874B /* Pods-kepetrovaPW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +450,7 @@
 		};
 		5E12E7A7274971460006439C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CF1934DAA2F812E16D564A /* Pods-kepetrovaPW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +498,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E12E7CC274982B80006439C /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E12E789274971420006439C /* Project object */;
 }
